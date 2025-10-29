@@ -31,6 +31,7 @@ public class Inicio_seccion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         tx_pass = new javax.swing.JTextField();
@@ -44,33 +45,34 @@ public class Inicio_seccion extends javax.swing.JFrame {
         ImajenCostado_inicio = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/inicio-seccion-icono-usuario.png"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 70, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 70, -1));
 
         jLabel1.setBackground(new java.awt.Color(51, 51, 255));
         jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Iniciar seccion");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, -1, 28));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, -1, 28));
 
         tx_pass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tx_passActionPerformed(evt);
             }
         });
-        getContentPane().add(tx_pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 240, 151, -1));
+        jPanel1.add(tx_pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 240, 151, -1));
 
         jLabel3.setText("contraseña");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 220, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 220, -1, -1));
 
         tx_usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tx_usuarioActionPerformed(evt);
             }
         });
-        getContentPane().add(tx_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, 151, -1));
+        jPanel1.add(tx_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, 151, -1));
 
         jToggleButton1.setText("continuar");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -78,10 +80,10 @@ public class Inicio_seccion extends javax.swing.JFrame {
                 jToggleButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 120, -1));
+        jPanel1.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 120, -1));
 
         jLabel2.setText("usuario");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 150, 51, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 150, 51, -1));
 
         jButton1.setText("Registrarse");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -89,14 +91,27 @@ public class Inicio_seccion extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 320, -1, -1));
-        getContentPane().add(tx_error, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 270, 170, 20));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 320, -1, -1));
+        jPanel1.add(tx_error, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 270, 170, 20));
 
         ImajenFondo_Inicio.setIcon(new javax.swing.ImageIcon("C:\\Users\\YARITZA\\Documents\\NetBeansProjects\\proyecto_de_aula_2\\src\\main\\resources\\img\\main-background.jpg")); // NOI18N
-        getContentPane().add(ImajenFondo_Inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 510, 480));
+        jPanel1.add(ImajenFondo_Inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 510, 480));
 
         ImajenCostado_inicio.setIcon(new javax.swing.ImageIcon("C:\\Users\\YARITZA\\Documents\\NetBeansProjects\\proyecto_de_aula_2\\src\\main\\resources\\img\\icono.png")); // NOI18N
-        getContentPane().add(ImajenCostado_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(-230, 0, 480, 480));
+        jPanel1.add(ImajenCostado_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(-230, -10, 480, 480));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 456, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -201,6 +216,7 @@ funciones f1 = new funciones();
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JLabel tx_error;
     private javax.swing.JTextField tx_pass;
