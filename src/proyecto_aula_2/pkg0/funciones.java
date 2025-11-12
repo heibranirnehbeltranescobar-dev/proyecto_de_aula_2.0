@@ -25,12 +25,7 @@ public class funciones {
     
     public String gusuario(String nombre , String cedula, String email , String contrasena,String rol){
         
-        Usuario u = new Usuario();
-        u.setNombreCompleto(nombre);
-        u.setCedula(cedula);
-        u.setEmail(email);
-        u.setPassword(contrasena);
-        u.setRol(rol);
+        Usuario u = new Usuario(nombre,cedula,email,contrasena,rol);
         
         usuarios [cantvendedor] = u;
         cantvendedor++;

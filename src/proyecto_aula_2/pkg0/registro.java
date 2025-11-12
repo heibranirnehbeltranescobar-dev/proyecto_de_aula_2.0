@@ -35,9 +35,11 @@ public class registro extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         tx_registronombre = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -54,9 +56,11 @@ public class registro extends javax.swing.JFrame {
         error_email = new javax.swing.JLabel();
         error_tipo = new javax.swing.JLabel();
         error_cedula = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
 
         jLabel8.setText("jLabel8");
+
+        jLabel10.setText("jLabel10");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,54 +68,47 @@ public class registro extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 0, 0));
         jPanel2.setForeground(new java.awt.Color(0, 0, 204));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Registro");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 33, 125, -1));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(237, 237, 237))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(jLabel1)
-                .addContainerGap(39, Short.MAX_VALUE))
-        );
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/atras.png"))); // NOI18N
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 80, 80));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 653, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 653, 110));
 
         jLabel2.setText("Nombre");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 126, 66, 28));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 66, 28));
 
         tx_registronombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tx_registronombreActionPerformed(evt);
             }
         });
-        jPanel1.add(tx_registronombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 126, 155, 28));
+        jPanel1.add(tx_registronombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 130, 155, 28));
 
         jLabel3.setText("Cedula");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 173, 66, -1));
-        jPanel1.add(tx_registroapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 166, 155, 31));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 66, -1));
+        jPanel1.add(tx_registroapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 155, 31));
 
         jLabel4.setText("Email");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 215, 66, -1));
-        jPanel1.add(tx_registroemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 207, 155, 30));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 66, -1));
+        jPanel1.add(tx_registroemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 155, 30));
 
         jLabel5.setText("Contraseña");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 250, 66, -1));
-        jPanel1.add(tx_registrocontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 243, 155, 30));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 66, -1));
+        jPanel1.add(tx_registrocontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 155, 30));
 
         b_terminarR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono-agregar-usuario.png"))); // NOI18N
-        b_terminarR.setText("terminar registro");
+        b_terminarR.setText("Registrarse");
         b_terminarR.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 b_terminarRMouseEntered(evt);
@@ -122,20 +119,20 @@ public class registro extends javax.swing.JFrame {
                 b_terminarRActionPerformed(evt);
             }
         });
-        jPanel1.add(b_terminarR, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 400, -1, 36));
+        jPanel1.add(b_terminarR, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, 150, 40));
 
         tx_registrotipo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tx_registrotipoActionPerformed(evt);
             }
         });
-        jPanel1.add(tx_registrotipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 344, 155, 30));
+        jPanel1.add(tx_registrotipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 155, 30));
 
         jLabel6.setText("Dijite el numero de  su occion");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(232, 294, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, -1, -1));
 
         jLabel7.setText("1. Usuario 2.Vendedor");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 316, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 320, -1, -1));
         jPanel1.add(L_registroerror, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 506, 155, 28));
 
         error_email.setBackground(new java.awt.Color(0, 0, 0));
@@ -145,14 +142,8 @@ public class registro extends javax.swing.JFrame {
         jPanel1.add(error_tipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(393, 354, 137, 30));
         jPanel1.add(error_cedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(399, 166, 101, 31));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono-agregar-usuario.png"))); // NOI18N
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(536, 344, -1, -1));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo_registro.png"))); // NOI18N
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 106, 660, 440));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -215,13 +206,13 @@ public class registro extends javax.swing.JFrame {
             
                 
                  a.gusuario(Rnombre, Rcedula, Remail, Rcontraseña,"1");
-                  new Inicio_seccion(a).setVisible(true);
+                  new inicio_secion(a).setVisible(true);
                   this.dispose();
             }
             if(Rtipo.equalsIgnoreCase("vendedor") || Rtipo.equals("2")){
                 
                 a.gusuario(Rnombre, Rcedula, Remail, Rcontraseña,"2");
-                 new Inicio_seccion(a).setVisible(true);
+                 new inicio_secion(a).setVisible(true);
                  this.dispose();
                
             }
@@ -237,9 +228,10 @@ public class registro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tx_registrotipoActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+
+        new inicio_secion(a).setVisible(true);
+    }//GEN-LAST:event_jLabel11MouseClicked
 
     /**
      * @param args the command line arguments
@@ -272,8 +264,9 @@ public class registro extends javax.swing.JFrame {
     private javax.swing.JLabel error_cedula;
     private javax.swing.JLabel error_email;
     private javax.swing.JLabel error_tipo;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -281,6 +274,7 @@ public class registro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField tx_registroapellido;

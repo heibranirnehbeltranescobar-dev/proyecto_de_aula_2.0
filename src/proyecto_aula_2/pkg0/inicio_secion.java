@@ -4,6 +4,8 @@
  */
 package proyecto_aula_2.pkg0;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author YARITZA
@@ -11,11 +13,12 @@ package proyecto_aula_2.pkg0;
 public class inicio_secion extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(inicio_secion.class.getName());
-
+    private funciones a;
     /**
      * Creates new form inicio_secion
      */
-    public inicio_secion() {
+    public inicio_secion(funciones funcion) {
+        this.a = funcion;
         initComponents();
     }
 
@@ -28,25 +31,143 @@ public class inicio_secion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
+        tx_error = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        tx_correo = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        tx_contrasena = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.add(tx_error, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 250, 180, 20));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-300, 0, 530, 410));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/perfil-del-usuario (1).png"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 56, 70, 70));
+
+        jLabel2.setText("Correo");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, -1, -1));
+        jPanel1.add(tx_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 180, 20));
+
+        jLabel4.setText("Contraseña");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, -1, -1));
+        jPanel1.add(tx_contrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, 180, -1));
+
+        jButton1.setText("Continuar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, 120, -1));
+
+        jButton2.setText("Registrarse");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 300, 100, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/main-background.jpg"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 370, 410));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 597, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 404, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+String email = tx_correo.getText();
+ String contrasena = tx_contrasena.getText();
+
+    if(email.isEmpty() || contrasena.isEmpty()){
+        JOptionPane.showMessageDialog(null, "Digite algo en usuario y en contraseña");
+        
+    }
+
+    if(email.equalsIgnoreCase("heibran@gmail.com") && contrasena.equals("123456")){
+        new bienvenido().setVisible(true);
+        this.dispose();
+        
+    }
+    
+    boolean encontrado = false;
+    System.out.print("hola");
+    for(int p = 0; p <= a.cantvendedor; p++){
+          
+        if (a.usuarios[p] != null ) {
+        System.out.print("\n Antes del condicional");  
+        System.out.print("\n" + this.a.usuarios[p].nombreCompleto);  
+        System.out.print("\n" + this.a.usuarios[p].password);  }
+        
+       if (a.usuarios[p].email != null || a.usuarios[p].password != null ) {
+              System.out.print("Despues del condicional");   
+             if(a.usuarios[p].email.equalsIgnoreCase(email) && a.usuarios[p].password.equals(contrasena)){
+                if(a.usuarios[p].rol == "2"){
+                a.IDusuarioactual = p;
+                a.cedulausuarioactual = a.usuarios[p].cedula;
+                new vista_vendedores(a).setVisible(true);
+                
+                this.dispose();
+                encontrado = true;
+                break;}  if(a.usuarios[p].rol == "1"){
+                a.IDusuarioactual = p;
+                a.cedulausuarioactual = a.usuarios[p].cedula;
+                new vista_usuario(a).setVisible(true);
+                this.dispose();
+                encontrado = true;
+                break;}
+            
+        }
+}
+           
+    }
+
+    if(!encontrado){
+         tx_error.setText("Usuario o contraseña incorrectos");
+    }
+        
+                     // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        new registro(a).setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -68,12 +189,23 @@ public class inicio_secion extends javax.swing.JFrame {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+funciones f1 = new funciones();
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new inicio_secion().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new inicio_secion(f1).setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JTextField tx_contrasena;
+    private javax.swing.JTextField tx_correo;
+    private javax.swing.JLabel tx_error;
     // End of variables declaration//GEN-END:variables
 }
