@@ -375,6 +375,7 @@ public class bienvenido extends javax.swing.JFrame {
     private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
        jPanel6.setBackground(new Color(0, 0, 0));
        new modificacion_usuarios_admin().setVisible(true);
+       this.dispose();
     }//GEN-LAST:event_jPanel6MouseClicked
 
     private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
