@@ -10,48 +10,19 @@ package proyecto_aula_2.pkg0;
  */
 public class Usuario {
 
-    public String getNombreCompleto() {
-        return nombreCompleto;
-    }
-
-    public void setNombreCompleto(String nombreCompleto) {
-        this.nombreCompleto = nombreCompleto;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getCedula() {
-        return cedula;
-    }
-
-    public void setCedula(String cedulas) {
-        this.cedula = cedulas;
-    }
-      public String getrol() {
-        return rol;
-    }
-
-    public void setRol(String rol) {
-        this.rol = rol;
-    }
+   
     
-    private String nombreCompleto;
-    private String email;
-    private String password;
-    private String cedula;
-    private String rol;
+    public String nombreCompleto;
+    public String email;
+    public String password;
+    public String cedula;
+    public String rol;
+ 
+    public Usuario(String nombreCompleto, String email, String password,String cedula,String rol) {
+        this.nombreCompleto = nombreCompleto;
+        this.email = email;
+        this.password = password;
+        this.cedula = cedula;
+        this.rol = rol;
+    }      
 }
