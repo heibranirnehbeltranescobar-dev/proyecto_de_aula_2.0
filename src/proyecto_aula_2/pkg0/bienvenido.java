@@ -388,6 +388,8 @@ public class bienvenido extends javax.swing.JFrame {
 
     private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
        jPanel7.setBackground(new Color(0, 0, 0));
+       new modificacion_de_vendedores().setVisible(true);
+       this.dispose(); 
     }//GEN-LAST:event_jPanel7MouseClicked
 
     private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
