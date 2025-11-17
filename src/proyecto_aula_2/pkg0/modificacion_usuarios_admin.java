@@ -390,13 +390,22 @@ public class modificacion_usuarios_admin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void mostrar_usuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostrar_usuariosActionPerformed
-    mostrar_usuarios.setText("");
-    }//GEN-LAST:event_mostrar_usuariosActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    new bienvenido().setVisible(true);
+    this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void usuarios_totalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuarios_totalesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_usuarios_totalesActionPerformed
+
+    private void mostrar_usuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostrar_usuariosActionPerformed
+        mostrar_usuarios.setText("");
+    }//GEN-LAST:event_mostrar_usuariosActionPerformed
 
     private void tx_emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_emailActionPerformed
         // TODO add your handling code here:
@@ -424,7 +433,7 @@ public class modificacion_usuarios_admin extends javax.swing.JFrame {
         String Rcontraseña = tx_contraseña.getText();
         boolean Cemail = false;
         boolean verificarvacio = true;
-        
+
         if(Remail.isEmpty() || Rnombre.isEmpty() || Rcedula.isEmpty() || Rcontraseña.isEmpty() ){
 
             L_Agregarerror.setText("Hay partes en blanco en sus datos");
@@ -437,24 +446,15 @@ public class modificacion_usuarios_admin extends javax.swing.JFrame {
         if( Cemail==false ){
             error_email.setText("Email no valido");
         }
-       if(e.validarCedula(Rcedula)==false){
-         error_cedula.setText("dijite una cedula valida");
-       }
-      if ( Cemail == true && verificarvacio == true && e.validarCedula(Rcedula) == true){
-                  e.gusuario(Rnombre, Rcedula, Remail, Rcontraseña,"1");
-                  
-            }
-      
+        if(e.validarCedula(Rcedula)==false){
+            error_cedula.setText("dijite una cedula valida");
+        }
+        if ( Cemail == true && verificarvacio == true && e.validarCedula(Rcedula) == true){
+            e.gusuario(Rnombre, Rcedula, Remail, Rcontraseña,"1");
+
+        }
+
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-    new bienvenido().setVisible(true);
-    this.dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
