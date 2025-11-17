@@ -404,7 +404,7 @@ public class modificacion_usuarios_admin extends javax.swing.JFrame {
     }//GEN-LAST:event_usuarios_totalesActionPerformed
 
     private void mostrar_usuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mostrar_usuariosActionPerformed
-        mostrar_usuarios.setText("");
+        
     }//GEN-LAST:event_mostrar_usuariosActionPerformed
 
     private void tx_emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_emailActionPerformed
