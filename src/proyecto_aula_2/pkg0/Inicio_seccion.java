@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package proyecto_aula_2.pkg0;
 
 import javax.swing.JOptionPane;
@@ -31,6 +28,8 @@ public class Inicio_seccion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        ImajenCostado_inicio = new javax.swing.JLabel();
+        ImajenFondo_Inicio = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -41,8 +40,6 @@ public class Inicio_seccion extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         tx_error = new javax.swing.JLabel();
-        ImajenFondo_Inicio = new javax.swing.JLabel();
-        ImajenCostado_inicio = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -94,23 +91,15 @@ public class Inicio_seccion extends javax.swing.JFrame {
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 320, -1, -1));
         jPanel1.add(tx_error, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 270, 170, 20));
 
-        ImajenFondo_Inicio.setIcon(new javax.swing.ImageIcon("C:\\Users\\YARITZA\\Documents\\NetBeansProjects\\proyecto_de_aula_2\\src\\main\\resources\\img\\main-background.jpg")); // NOI18N
-        jPanel1.add(ImajenFondo_Inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 510, 480));
-
-        ImajenCostado_inicio.setIcon(new javax.swing.ImageIcon("C:\\Users\\YARITZA\\Documents\\NetBeansProjects\\proyecto_de_aula_2\\src\\main\\resources\\img\\icono.png")); // NOI18N
-        jPanel1.add(ImajenCostado_inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(-230, -10, 480, 480));
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 760, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 456, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 456, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
