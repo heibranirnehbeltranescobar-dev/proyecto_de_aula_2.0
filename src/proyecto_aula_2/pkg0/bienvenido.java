@@ -362,6 +362,8 @@ public class bienvenido extends javax.swing.JFrame {
 
     private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked
        jPanel9.setBackground(new Color(0, 0, 0));
+       new MONTOS_U_Y_V().setVisible(true);
+       this.dispose();
     }//GEN-LAST:event_jPanel9MouseClicked
 
     private void jPanel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseExited
