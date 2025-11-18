@@ -17,12 +17,14 @@ public class Usuario {
     public String password;
     public String cedula;
     public String rol;
+    public int dinero;
  
-    public Usuario(String nombreCompleto, String email, String password,String cedula,String rol) {
+    public Usuario(String nombreCompleto, String email, String password,String cedula,String rol,int dinero) {
         this.nombreCompleto = nombreCompleto;
         this.email = email;
         this.password = password;
         this.cedula = cedula;
         this.rol = rol;
+        this.dinero = dinero;
     }      
 }

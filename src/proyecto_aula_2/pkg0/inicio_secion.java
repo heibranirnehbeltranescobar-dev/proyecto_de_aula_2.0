@@ -141,14 +141,14 @@ String email = tx_correo.getText();
                 if(a.usuarios[p].rol == "2"){
                 a.IDusuarioactual = p;
                 a.cedulausuarioactual = a.usuarios[p].cedula;
-                new vista_vendedores(a).setVisible(true);
+                new vista_vendedores().setVisible(true);
                 
                 this.dispose();
                 encontrado = true;
                 break;}  if(a.usuarios[p].rol == "1"){
                 a.IDusuarioactual = p;
                 a.cedulausuarioactual = a.usuarios[p].cedula;
-                new vista_usuario(a).setVisible(true);
+                new vista_usuario().setVisible(true);
                 this.dispose();
                 encontrado = true;
                 break;}

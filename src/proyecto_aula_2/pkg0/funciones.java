@@ -25,10 +25,10 @@ public class funciones {
     
     public String gusuario(String nombre , String cedula, String email , String contrasena,String rol){
         
-        Usuario u = new Usuario(nombre,cedula,email,contrasena,rol);
+        Usuario u = new Usuario(nombre,cedula,email,contrasena,rol,10000);
         
-        usuarios [cantvendedor] = u;
-        cantvendedor++;
+        usuarios [cantusuario] = u;
+        cantusuario++;
         
         String cara = "(=_=)";
         return cara;
@@ -46,12 +46,14 @@ public class funciones {
      String cara = "(=_=)";
         return cara;
      }
-     public String editvendedor (String nombre , String email , String contrasena){
+     public String editusuario (String nombre , String email , String contrasena,int pos){
      
        /* vendedores [IDusuarioactual][0] = nombre;
         vendedores [IDusuarioactual][2] = email;
         vendedores [IDusuarioactual][3] = contrasena;*/
-        
+         usuarios[pos].nombreCompleto = nombre;
+         usuarios[pos].email = email;
+         usuarios[pos].password = contrasena;
          String cara = "(=_=)";
         return cara;
      } 

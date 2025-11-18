@@ -73,7 +73,7 @@ public class registro extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Registro");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 33, 125, -1));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, 125, -1));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/atras.png"))); // NOI18N
         jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -96,16 +96,16 @@ public class registro extends javax.swing.JFrame {
         jPanel1.add(tx_registronombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 130, 155, 28));
 
         jLabel3.setText("Cedula");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 66, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 176, 66, 20));
         jPanel1.add(tx_registroapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 155, 31));
 
         jLabel4.setText("Email");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 66, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 216, 66, 20));
         jPanel1.add(tx_registroemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 155, 30));
 
         jLabel5.setText("Contraseña");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 66, -1));
-        jPanel1.add(tx_registrocontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 155, 30));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 66, -1));
+        jPanel1.add(tx_registrocontraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 155, 30));
 
         b_terminarR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono-agregar-usuario.png"))); // NOI18N
         b_terminarR.setText("Registrarse");
@@ -119,7 +119,7 @@ public class registro extends javax.swing.JFrame {
                 b_terminarRActionPerformed(evt);
             }
         });
-        jPanel1.add(b_terminarR, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, 150, 40));
+        jPanel1.add(b_terminarR, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, 150, 40));
 
         tx_registrotipo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,11 +136,11 @@ public class registro extends javax.swing.JFrame {
         jPanel1.add(L_registroerror, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 506, 155, 28));
 
         error_email.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(error_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(399, 207, 101, 30));
+        jPanel1.add(error_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 120, 30));
 
         error_tipo.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(error_tipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(393, 354, 137, 30));
-        jPanel1.add(error_cedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(399, 166, 101, 31));
+        jPanel1.add(error_tipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, 137, 30));
+        jPanel1.add(error_cedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 180, 31));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo_registro.png"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 106, 660, 440));
