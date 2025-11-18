@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+<<<<<<< HEAD
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/YARITZA/Documents/NetBeansProjects/proyecto_aula_2.0/src/proyecto_aula_2/pkg0/Inicio_seccion.java</file>
+=======
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/USER/proyecto_de_aula_2.0/src/proyecto_aula_2/pkg0/bienvenido.java</file>
+            <file>file:/C:/Users/USER/proyecto_de_aula_2.0/src/proyecto_aula_2/pkg0/modificacion_usuarios_admin.java</file>
+            <file>file:/C:/Users/USER/proyecto_de_aula_2.0/src/proyecto_aula_2/pkg0/modificacion_de_vendedores.java</file>
+            <file>file:/C:/Users/USER/proyecto_de_aula_2.0/src/proyecto_aula_2/pkg0/MONTOS_U_Y_V.java</file>
+>>>>>>> origin/vista_admin
         </group>
     </open-files>
 </project-private>
