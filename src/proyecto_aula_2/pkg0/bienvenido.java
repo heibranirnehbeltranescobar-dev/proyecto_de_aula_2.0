@@ -17,6 +17,7 @@ public class bienvenido extends javax.swing.JFrame {
      */
     public bienvenido() {
         initComponents();
+        this.setLocationRelativeTo(this);
     }
 
     /**

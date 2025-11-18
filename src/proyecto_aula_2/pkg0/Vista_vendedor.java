@@ -31,38 +31,22 @@ public class Vista_vendedor extends javax.swing.JFrame {
 
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        j_nombre_usuario = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        j_email_vendedor = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jPanel5 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         icono_usuario = new javax.swing.JLabel();
         pa_ventas = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         pa_nueva_venta = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        imagen_de_vista_vendedor1 = new javax.swing.JLabel();
         imagen_de_vista_vendedor2 = new javax.swing.JLabel();
         pestanas_vista_vendedor = new javax.swing.JTabbedPane();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        j_nombre_usuario = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        j_cedula_vendedor = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        j_email_vendedor = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        j_contrasena_vendedor = new javax.swing.JLabel();
-        b_modificar_vendedor = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        fondo_muestra_datos_vendedor = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        tx_nombre_producto = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        tx_descripcion_producto = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        tx_precio_producto = new javax.swing.JTextField();
-        b_new_objeto = new javax.swing.JButton();
-        error_precio = new javax.swing.JLabel();
-        fondo_new__venta = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         tx_cedula_editar = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
@@ -77,10 +61,46 @@ public class Vista_vendedor extends javax.swing.JFrame {
         L_error_correo = new javax.swing.JLabel();
         L_error_correo_editar = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        imagen_de_vista_vendedor1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        tx_nombre_producto = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        tx_descripcion_producto = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        tx_precio_producto = new javax.swing.JTextField();
+        b_new_objeto = new javax.swing.JButton();
+        error_precio = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        fondo_muestra_datos_vendedor = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        j_cedula_vendedor = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        j_contrasena_vendedor = new javax.swing.JLabel();
+        b_modificar_vendedor = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        fondo_new__venta = new javax.swing.JLabel();
 
         jLabel2.setText("jLabel2");
 
         jButton1.setText("jButton1");
+
+        j_nombre_usuario.setText("ksjv ");
+
+        jTextField1.setText("jTextField1");
+
+        jTextField2.setText("jTextField2");
+
+        jTextField3.setText("jTextField3");
+
+        jTextField5.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField5.setText("jTextField5");
+
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -102,7 +122,8 @@ public class Vista_vendedor extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Ventas");
 
         javax.swing.GroupLayout pa_ventasLayout = new javax.swing.GroupLayout(pa_ventas);
@@ -110,7 +131,7 @@ public class Vista_vendedor extends javax.swing.JFrame {
         pa_ventasLayout.setHorizontalGroup(
             pa_ventasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pa_ventasLayout.createSequentialGroup()
-                .addContainerGap(69, Short.MAX_VALUE)
+                .addContainerGap(60, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(66, 66, 66))
         );
@@ -119,7 +140,7 @@ public class Vista_vendedor extends javax.swing.JFrame {
             .addGroup(pa_ventasLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel3)
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(pa_ventas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 170, 30));
@@ -132,7 +153,8 @@ public class Vista_vendedor extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Nuevo producto");
 
         javax.swing.GroupLayout pa_nueva_ventaLayout = new javax.swing.GroupLayout(pa_nueva_venta);
@@ -142,103 +164,21 @@ public class Vista_vendedor extends javax.swing.JFrame {
             .addGroup(pa_nueva_ventaLayout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addComponent(jLabel1)
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
         pa_nueva_ventaLayout.setVerticalGroup(
             pa_nueva_ventaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pa_nueva_ventaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(pa_nueva_venta, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 170, 30));
 
-        imagen_de_vista_vendedor1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono.png"))); // NOI18N
-        imagen_de_vista_vendedor1.setText(" new bienvenido().setVisible(true);");
-        jPanel1.add(imagen_de_vista_vendedor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, 500, 90));
-
         imagen_de_vista_vendedor2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/main-background.jpg"))); // NOI18N
         imagen_de_vista_vendedor2.setText(" new bienvenido().setVisible(true);");
         jPanel1.add(imagen_de_vista_vendedor2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 440));
-
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel8.setText("Nombre :");
-        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 50, -1));
-        jPanel4.add(j_nombre_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 190, 20));
-
-        jLabel4.setText("Cedula :");
-        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, -1, -1));
-        jPanel4.add(j_cedula_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 170, 20));
-
-        jLabel9.setText("Email :");
-        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 50, -1));
-        jPanel4.add(j_email_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 200, 20));
-
-        jLabel10.setText("contraseña :");
-        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, -1));
-        jPanel4.add(j_contrasena_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 130, 20));
-
-        b_modificar_vendedor.setText("Modificar algun parametro");
-        b_modificar_vendedor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b_modificar_vendedorActionPerformed(evt);
-            }
-        });
-        jPanel4.add(b_modificar_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 180, 30));
-
-        jButton4.setText("Cerrar secion");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, -1, -1));
-
-        fondo_muestra_datos_vendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo_de_muestra_de_datos_vendedor.jpg"))); // NOI18N
-        jPanel4.add(fondo_muestra_datos_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(-540, 0, 1050, 380));
-
-        pestanas_vista_vendedor.addTab("tab1", jPanel4);
-
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        pestanas_vista_vendedor.addTab("tab2", jPanel5);
-
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel5.setText("Dijite el nombre del producto");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, -1));
-        jPanel2.add(tx_nombre_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 300, -1));
-
-        jLabel6.setText("Descipcion del objeto");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, -1, -1));
-        jPanel2.add(tx_descripcion_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 300, 120));
-
-        jLabel7.setText("Dijite el precio en dolares");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, -1, -1));
-
-        tx_precio_producto.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                tx_precio_productoKeyTyped(evt);
-            }
-        });
-        jPanel2.add(tx_precio_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 200, -1));
-
-        b_new_objeto.setText("Subir producto");
-        b_new_objeto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b_new_objetoActionPerformed(evt);
-            }
-        });
-        jPanel2.add(b_new_objeto, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, -1, -1));
-
-        error_precio.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel2.add(error_precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 120, 20));
-
-        fondo_new__venta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo_nuevo_objeto.jpg"))); // NOI18N
-        jPanel2.add(fondo_new__venta, new org.netbeans.lib.awtextra.AbsoluteConstraints(-300, 0, 800, 360));
-
-        pestanas_vista_vendedor.addTab("tab3", jPanel2);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -287,7 +227,100 @@ public class Vista_vendedor extends javax.swing.JFrame {
 
         pestanas_vista_vendedor.addTab("tab4", jPanel3);
 
-        jPanel1.add(pestanas_vista_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 500, 390));
+        imagen_de_vista_vendedor1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono.png"))); // NOI18N
+        imagen_de_vista_vendedor1.setText(" new bienvenido().setVisible(true);");
+        pestanas_vista_vendedor.addTab("tab5", imagen_de_vista_vendedor1);
+
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setText("Dijite el nombre del producto");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, -1));
+        jPanel2.add(tx_nombre_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 300, -1));
+
+        jLabel6.setText("Descipcion del objeto");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, -1, -1));
+        jPanel2.add(tx_descripcion_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 300, 120));
+
+        jLabel7.setText("Dijite el precio en dolares");
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, -1, -1));
+
+        tx_precio_producto.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_precio_productoKeyTyped(evt);
+            }
+        });
+        jPanel2.add(tx_precio_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 200, -1));
+
+        b_new_objeto.setText("Subir producto");
+        b_new_objeto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_new_objetoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(b_new_objeto, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, -1, -1));
+
+        error_precio.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel2.add(error_precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 120, 20));
+
+        pestanas_vista_vendedor.addTab("tab3", jPanel2);
+
+        jPanel1.add(pestanas_vista_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 500, 310));
+
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        fondo_muestra_datos_vendedor.setBackground(new java.awt.Color(0, 0, 0));
+        fondo_muestra_datos_vendedor.setForeground(new java.awt.Color(0, 0, 0));
+        fondo_muestra_datos_vendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo_de_muestra_de_datos_vendedor.jpg"))); // NOI18N
+        fondo_muestra_datos_vendedor.setText("c");
+        jPanel6.add(fondo_muestra_datos_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(-350, 0, 1050, 380));
+
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel8.setText("Nombre :");
+        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 80, -1));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setText("Cedula :");
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, -1, -1));
+        jPanel4.add(j_cedula_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 170, 20));
+
+        jLabel9.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel9.setText("Email :");
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 50, -1));
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel10.setText("contraseña :");
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, -1));
+        jPanel4.add(j_contrasena_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 130, 20));
+
+        b_modificar_vendedor.setText("Modificar algun parametro");
+        b_modificar_vendedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_modificar_vendedorActionPerformed(evt);
+            }
+        });
+        jPanel4.add(b_modificar_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 180, 30));
+
+        jButton4.setText("Cerrar secion");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, -1, -1));
+
+        jPanel6.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, 500, 275));
+
+        fondo_new__venta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo_nuevo_objeto.jpg"))); // NOI18N
+        jPanel6.add(fondo_new__venta, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, 10, 800, 360));
+
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 440));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -297,7 +330,7 @@ public class Vista_vendedor extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -447,6 +480,12 @@ funciones f2 = new funciones();
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     private javax.swing.JLabel j_cedula_vendedor;
     private javax.swing.JLabel j_contrasena_vendedor;
     private javax.swing.JLabel j_email_vendedor;
