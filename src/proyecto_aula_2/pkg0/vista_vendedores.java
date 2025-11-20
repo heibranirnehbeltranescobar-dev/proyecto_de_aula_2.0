@@ -11,12 +11,13 @@ package proyecto_aula_2.pkg0;
 public class vista_vendedores extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(vista_vendedores.class.getName());
-
+    private funciones a;
     /**
      * Creates new form vista_vendedores
      */
-    public vista_vendedores() {
+    public vista_vendedores(funciones funcion) {
         initComponents();
+        this.a = funcion;
     }
 
     /**
@@ -28,21 +29,530 @@ public class vista_vendedores extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        pestañas_vendedor = new javax.swing.JTabbedPane();
+        inicio = new javax.swing.JPanel();
+        j_vista_nombre_producto1 = new javax.swing.JLabel();
+        j_vista_precio_producto1 = new javax.swing.JLabel();
+        j_vista_nombre_producto2 = new javax.swing.JLabel();
+        j_vista_nombre_producto3 = new javax.swing.JLabel();
+        j_vista_nombre_producto4 = new javax.swing.JLabel();
+        j_vista_nombre_producto5 = new javax.swing.JLabel();
+        j_vista_precio_producto2 = new javax.swing.JLabel();
+        j_vista_precio_producto3 = new javax.swing.JLabel();
+        j_vista_precio_producto4 = new javax.swing.JLabel();
+        j_vista_precio_producto5 = new javax.swing.JLabel();
+        b_usuario = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        j_nombre_usuario = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        j_cedula_usuario = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jLabel22 = new javax.swing.JLabel();
+        l_monto_usuario = new javax.swing.JLabel();
+        bienvenido = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        registro_p = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        tx_nombre_producto = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        tx_descripcion_producto = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        tx_precio_producto = new javax.swing.JTextField();
+        error_precio = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        error_bacio = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        editar_datos_vendedor = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        tx_edit_contraseña = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        tx_edit_nombre = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        tx_edit_email = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        error_edit_email = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        l_regrso = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Imagen4.jpg"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 520, 90));
+
+        inicio.setBackground(new java.awt.Color(255, 153, 51));
+        inicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        j_vista_nombre_producto1.setText("1");
+        inicio.add(j_vista_nombre_producto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 220, 50));
+
+        j_vista_precio_producto1.setText("1");
+        inicio.add(j_vista_precio_producto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, 100, 50));
+
+        j_vista_nombre_producto2.setText("2");
+        inicio.add(j_vista_nombre_producto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 220, 50));
+
+        j_vista_nombre_producto3.setText("3");
+        inicio.add(j_vista_nombre_producto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 220, 50));
+
+        j_vista_nombre_producto4.setText("4");
+        inicio.add(j_vista_nombre_producto4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 220, 50));
+
+        j_vista_nombre_producto5.setText("5");
+        inicio.add(j_vista_nombre_producto5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 220, 50));
+
+        j_vista_precio_producto2.setText("2");
+        inicio.add(j_vista_precio_producto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 80, 100, 50));
+
+        j_vista_precio_producto3.setText("3");
+        inicio.add(j_vista_precio_producto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 100, 50));
+
+        j_vista_precio_producto4.setText("4");
+        inicio.add(j_vista_precio_producto4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 100, 50));
+
+        j_vista_precio_producto5.setText("5");
+        inicio.add(j_vista_precio_producto5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 100, 50));
+
+        b_usuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/usuario.png"))); // NOI18N
+        b_usuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_usuarioActionPerformed(evt);
+            }
+        });
+        inicio.add(b_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, 100, 70));
+
+        jLabel5.setText("Nombre");
+        inicio.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, -1, -1));
+        inicio.add(j_nombre_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 100, 20));
+
+        jLabel6.setText("Cedula");
+        inicio.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 140, -1, -1));
+        inicio.add(j_cedula_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, 100, 20));
+
+        jButton4.setText("editar parametros");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        inicio.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, -1, -1));
+
+        jLabel22.setText("monto");
+        inicio.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 180, -1, -1));
+        inicio.add(l_monto_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, 90, 20));
+
+        pestañas_vendedor.addTab("tab1", inicio);
+
+        bienvenido.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel8.setText("Bienvenido a Marketnatlan");
+        bienvenido.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 460, 130));
+
+        jButton1.setText("Continuar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        bienvenido.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, -1, 20));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo_registro.png"))); // NOI18N
+        bienvenido.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 605, 440));
+
+        pestañas_vendedor.addTab("tab2", bienvenido);
+
+        registro_p.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel10.setText("Nombre del producto");
+        registro_p.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 32, 131, -1));
+
+        tx_nombre_producto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tx_nombre_productoActionPerformed(evt);
+            }
+        });
+        registro_p.add(tx_nombre_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 54, 234, -1));
+
+        jLabel11.setText("Descripcion del producto");
+        registro_p.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 88, 143, -1));
+        registro_p.add(tx_descripcion_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 110, 234, 59));
+
+        jLabel12.setText("Precio del producto");
+        registro_p.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 175, -1, -1));
+
+        tx_precio_producto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tx_precio_productoActionPerformed(evt);
+            }
+        });
+        tx_precio_producto.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_precio_productoKeyTyped(evt);
+            }
+        });
+        registro_p.add(tx_precio_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 197, 234, -1));
+        registro_p.add(error_precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(338, 197, 108, 19));
+
+        jButton2.setText("Registrar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        registro_p.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 237, -1, -1));
+        registro_p.add(error_bacio, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, 180, 30));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo_nuevo_objeto.jpg"))); // NOI18N
+        registro_p.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(-220, 0, 740, 320));
+
+        pestañas_vendedor.addTab("tab3", registro_p);
+
+        editar_datos_vendedor.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel15.setText("Nombre");
+        editar_datos_vendedor.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, -1));
+        editar_datos_vendedor.add(tx_edit_contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 170, 30));
+
+        jLabel16.setText("Email");
+        editar_datos_vendedor.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, -1));
+        editar_datos_vendedor.add(tx_edit_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 72, 170, 30));
+
+        jLabel17.setText("Contraseña");
+        editar_datos_vendedor.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, -1, -1));
+        editar_datos_vendedor.add(tx_edit_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, 170, 30));
+
+        jButton3.setText("Modificar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        editar_datos_vendedor.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, -1, -1));
+
+        jLabel18.setText("Si no desea modificar un parametro dejelo en blanco.");
+        editar_datos_vendedor.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 300, 20));
+        editar_datos_vendedor.add(error_edit_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 110, 120, 30));
+
+        jLabel20.setText("Si desea agregar o quitar dinero hable con el administrador");
+        editar_datos_vendedor.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, -1, -1));
+
+        jLabel21.setText("y si desea modificar la cedula tambie");
+        editar_datos_vendedor.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, -1, 20));
+
+        l_regrso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/atras.png"))); // NOI18N
+        l_regrso.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                l_regrsoMouseClicked(evt);
+            }
+        });
+        editar_datos_vendedor.add(l_regrso, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 100, 50));
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_editar.png"))); // NOI18N
+        editar_datos_vendedor.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 310));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo_registro.png"))); // NOI18N
+        editar_datos_vendedor.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 520, 340));
+
+        pestañas_vendedor.addTab("tab4", editar_datos_vendedor);
+
+        jPanel1.add(pestañas_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 520, 360));
+
+        jPanel3.setBackground(new java.awt.Color(255, 153, 51));
+        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel3MouseClicked(evt);
+            }
+        });
+
+        jLabel4.setText("Inicio");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(71, 71, 71)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(72, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4)
+                .addContainerGap(8, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 180, 30));
+
+        jPanel2.setBackground(new java.awt.Color(255, 153, 51));
+        jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel2MouseClicked(evt);
+            }
+        });
+
+        jLabel9.setText("Registrar producto");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(jLabel9)
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel9)
+                .addContainerGap(8, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 180, 30));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo_tipo.jpg"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 90, 70));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/main-background.jpg"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 410));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        int posicionventa1 = 0;
+        int posicionventa2 = 0;
+        int posicionventa3 = 0;
+        int cont = 0 ;
+        for (int i = 0; i < a.cantusuario; i++) {
+            if (a.usuarios[i].cedula == a.cedulausuarioactual) {
+                cont++;
+            }
+            if (cont==1) {
+                posicionventa1 = i;
+            }
+            if (cont==2) {
+                posicionventa2 = i;
+            }
+            if (cont==3) {
+                posicionventa3 = i;
+            }
+        }
+        if (cont == 1) {
+            j_vista_nombre_producto1.setText(a.productos[posicionventa1].nombre);
+            j_vista_precio_producto1.setText(""+a.productos[posicionventa1].precio);
+        }
+        if (cont == 2) {
+            j_vista_nombre_producto2.setText(a.productos[posicionventa2].nombre);
+            j_vista_precio_producto2.setText(""+a.productos[posicionventa2].precio);
+        }if (cont == 3) {
+            j_vista_nombre_producto3.setText(a.productos[posicionventa3].nombre);
+            j_vista_precio_producto3.setText(""+a.productos[posicionventa3].precio);
+        }
+        j_nombre_usuario.setText(a.usuarios[a.IDusuarioactual].nombreCompleto);
+        j_cedula_usuario.setText(a.usuarios[a.IDusuarioactual].cedula);
+        l_monto_usuario.setText(""+a.usuarios[a.IDusuarioactual].dinero);
+        pestañas_vendedor.setSelectedIndex(0);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
+        int posicionventa1 = 0;
+        int posicionventa2 = 0;
+        int posicionventa3 = 0;
+        int cont = 0 ;
+        for (int i = 0; i < a.cantusuario; i++) {
+            if (a.usuarios[i].cedula == a.cedulausuarioactual) {
+                cont++;
+            }
+            if (cont==1) {
+                posicionventa1 = i;
+            }
+            if (cont==2) {
+                posicionventa2 = i;
+            }
+            if (cont==3) {
+                posicionventa3 = i;
+            }
+           
+        }
+        if (cont == 1) {
+            j_vista_nombre_producto1.setText(a.productos[posicionventa1].nombre);
+            j_vista_precio_producto1.setText(""+a.productos[posicionventa1].precio);
+        }
+        if (cont == 2) {
+            j_vista_nombre_producto2.setText(a.productos[posicionventa2].nombre);
+            j_vista_precio_producto2.setText(""+a.productos[posicionventa2].precio);
+        }if (cont == 3) {
+            j_vista_nombre_producto3.setText(a.productos[posicionventa3].nombre);
+            j_vista_precio_producto3.setText(""+a.productos[posicionventa3].precio);
+        }
+        j_nombre_usuario.setText(a.usuarios[a.IDusuarioactual].nombreCompleto);
+        j_cedula_usuario.setText(a.usuarios[a.IDusuarioactual].cedula);
+        l_monto_usuario.setText(""+a.usuarios[a.IDusuarioactual].dinero);
+        pestañas_vendedor.setSelectedIndex(0);
+    }//GEN-LAST:event_jPanel3MouseClicked
+
+    private void tx_nombre_productoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_nombre_productoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx_nombre_productoActionPerformed
+
+    private void tx_precio_productoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_precio_productoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx_precio_productoActionPerformed
+
+    private void tx_precio_productoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_precio_productoKeyTyped
+     char c=evt.getKeyChar();
+        if (Character.isLetter(c)) {
+            evt.consume();
+            error_precio.setText("Solo puede digitar numeros");
+            
+        }
+// TODO add your handling code here:
+    }//GEN-LAST:event_tx_precio_productoKeyTyped
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        error_bacio.setText("");
+        error_precio.setText("");
+        String nproducto =  tx_nombre_producto.getText();
+        String dproducto = tx_descripcion_producto.getText();
+        String preproducto = tx_precio_producto.getText();
+        int pproducto = Integer.parseInt(tx_precio_producto.getText());
+        a.Guardarproducto(nproducto, dproducto, pproducto);
+        pestañas_vendedor.setSelectedIndex(0);
+        if (!nproducto.isEmpty()&& !dproducto.isEmpty()&& !preproducto.isEmpty()) {
+            
+        
+        //muestra los datos del usuario
+         int posicionventa1 = 0;
+        int posicionventa2 = 0;
+        int posicionventa3 = 0;
+        
+        int cont = 0 ;
+        for (int i = 0; i < a.cantusuario; i++) {
+            if (a.usuarios[i].cedula == a.cedulausuarioactual) {
+                cont++;
+            }
+            if (cont==1) {
+                posicionventa1 = i;
+            }
+            if (cont==2) {
+                posicionventa2 = i;
+            }
+            if (cont==3) {
+                posicionventa3 = i;
+            }
+            
+        }
+        if (cont == 1) {
+            j_vista_nombre_producto1.setText(a.productos[posicionventa1].nombre);
+            j_vista_precio_producto1.setText(""+a.productos[posicionventa1].precio);
+        }
+        if (cont == 2) {
+            j_vista_nombre_producto2.setText(a.productos[posicionventa2].nombre);
+            j_vista_precio_producto2.setText(""+a.productos[posicionventa2].precio);
+        }if (cont == 3) {
+            j_vista_nombre_producto3.setText(a.productos[posicionventa3].nombre);
+            j_vista_precio_producto3.setText(""+a.productos[posicionventa3].precio);
+        }
+        j_nombre_usuario.setText(a.usuarios[a.IDusuarioactual].nombreCompleto);
+        j_cedula_usuario.setText(a.usuarios[a.IDusuarioactual].cedula);
+        l_monto_usuario.setText(""+a.usuarios[a.IDusuarioactual].dinero);
+        pestañas_vendedor.setSelectedIndex(0);
+   
+    }else{error_bacio.setText("No se aceptan datos bacios");}
+        
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
+        // TODO add your handling code here:
+        pestañas_vendedor.setSelectedIndex(2);
+    }//GEN-LAST:event_jPanel2MouseClicked
+
+    private void b_usuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_usuarioActionPerformed
+
+
+
+
+
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b_usuarioActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        String nombre = tx_edit_nombre.getText();
+        String email = tx_edit_email.getText();
+        String contrasena = tx_edit_contraseña.getText();
+        if (!email.isEmpty()) { 
+            boolean noex = true;
+             if (a.validarcorreo(email)) {
+                 for (int e = 0; e < a.cantusuario; e++) {
+                     if (a.usuarios[e].email.equals(nombre)) {
+                         error_edit_email.setText("ya existe alguien con este correo");
+                         noex = false;       
+                     }
+                     
+                     if (noex == true) {
+                         a.usuarios[a.IDusuarioactual].email = email;
+                     }
+   
+                      
+                 }   
+        }if (!a.validarCedula(email)) {
+                error_edit_email.setText("Email no valido");
+            }
+            
+        }
+        if (nombre.isEmpty()) {
+           a.usuarios[a.IDusuarioactual].nombreCompleto = nombre; 
+        }
+        if (contrasena.isEmpty()) {
+            a.usuarios[a.IDusuarioactual].password = contrasena;
+        }
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+         pestañas_vendedor.setSelectedIndex(3);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void l_regrsoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_l_regrsoMouseClicked
+        
+    }//GEN-LAST:event_l_regrsoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -64,11 +574,69 @@ public class vista_vendedores extends javax.swing.JFrame {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+funciones funciones = new funciones();
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new vista_vendedores().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new vista_vendedores(funciones).setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton b_usuario;
+    private javax.swing.JPanel bienvenido;
+    private javax.swing.JPanel editar_datos_vendedor;
+    private javax.swing.JLabel error_bacio;
+    private javax.swing.JLabel error_edit_email;
+    private javax.swing.JLabel error_precio;
+    private javax.swing.JPanel inicio;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JLabel j_cedula_usuario;
+    private javax.swing.JLabel j_nombre_usuario;
+    private javax.swing.JLabel j_vista_nombre_producto1;
+    private javax.swing.JLabel j_vista_nombre_producto2;
+    private javax.swing.JLabel j_vista_nombre_producto3;
+    private javax.swing.JLabel j_vista_nombre_producto4;
+    private javax.swing.JLabel j_vista_nombre_producto5;
+    private javax.swing.JLabel j_vista_precio_producto1;
+    private javax.swing.JLabel j_vista_precio_producto2;
+    private javax.swing.JLabel j_vista_precio_producto3;
+    private javax.swing.JLabel j_vista_precio_producto4;
+    private javax.swing.JLabel j_vista_precio_producto5;
+    private javax.swing.JLabel l_monto_usuario;
+    private javax.swing.JLabel l_regrso;
+    private javax.swing.JTabbedPane pestañas_vendedor;
+    private javax.swing.JPanel registro_p;
+    private javax.swing.JTextField tx_descripcion_producto;
+    private javax.swing.JTextField tx_edit_contraseña;
+    private javax.swing.JTextField tx_edit_email;
+    private javax.swing.JTextField tx_edit_nombre;
+    private javax.swing.JTextField tx_nombre_producto;
+    private javax.swing.JTextField tx_precio_producto;
     // End of variables declaration//GEN-END:variables
 }

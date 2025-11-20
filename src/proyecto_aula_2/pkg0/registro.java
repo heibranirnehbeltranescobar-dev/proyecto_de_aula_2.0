@@ -196,11 +196,18 @@ public class registro extends javax.swing.JFrame {
           error_tipo.setText("dijite una de las occiones");
           Ctipo = false;
       }
-
+     boolean unica = true;
       if(a.validarCedula(Rcedula)==false){
          error_cedula.setText("dijite una cedula valida");
+          for (int e = 0; e < a.cantusuario; e++) {
+              if (Rcedula == a.usuarios[e].cedula) {
+                  unica = false;
+                  
+              }
+              
+          }
       }
-       if ( Cemail == true && verificarvacio == true && a.validarCedula(Rcedula) == true && Ctipo == true){
+       if ( Cemail == true && verificarvacio == true && a.validarCedula(Rcedula) == true && Ctipo == true && unica == true){
            
             if(Rtipo.equalsIgnoreCase("usuario") || Rtipo.equals("1")){
             
