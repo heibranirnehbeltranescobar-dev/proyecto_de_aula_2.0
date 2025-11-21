@@ -17,6 +17,7 @@ public class funciones {
     public int canObjetos = 0;
     public int canproducto = 0;
     public String cedulausuarioactual;
+    public int dinero;
     
     
     public Usuario[] usuarios = new Usuario [10];
@@ -112,6 +113,8 @@ public class funciones {
     return lista;
 }
     
+
+    
     
  public String suspenderUsuario(String email) {
     for (int i = 0; i < cantusuario; i++) {
@@ -144,6 +147,85 @@ public String modificarUsuario(String correo, String nuevoNombre, String nuevaCo
 
     return "Usuario modificado correctamente";
 }
+
+public String listarVendedores() {
+    String mensaje = "";
+
+    for (int i = 0; i < cantusuario; i++) {
+        if (usuarios[i].rol.equals("2")) {  
+            mensaje += "Nombre completo: " + usuarios[i].nombreCompleto + "\n";
+            mensaje += "Contraseña: " + usuarios[i].cedula + "\n";
+            mensaje += "Correo: " + usuarios[i].email + "\n";
+            mensaje += "Cédula: " + usuarios[i].password + "\n";
+            mensaje += "Estado: " + "2" + "\n";
+            mensaje += "-----------------------------\n";
+        }
+    }
+
+    return mensaje;
+}
+public String suspenderVendedorPorCorreo(String correo) {
+    for (int i = 0; i < cantusuario; i++) {
+
+        
+        if (usuarios[i].rol.equals("2") && usuarios[i].email.equals(correo)) {
+
+            usuarios[i].rol = "0";  
+
+            return "Vendedor suspendido correctamente.";
+        }
+    }
+
+    return "No se encontró un vendedor con ese correo.";
+}
+
+public String modificarVendedor(String correoViejo, String nombreNuevo, String correoNuevo) {
+    for (int i = 0; i < cantusuario; i++) {
+
+        // Solo vendedores
+        if (usuarios[i].rol.equals("2") && usuarios[i].email.equals(correoViejo)) {
+
+            usuarios[i].nombreCompleto = nombreNuevo;
+            usuarios[i].email = correoNuevo;
+
+            return "Vendedor modificado correctamente.";
+        }
+    }
+
+    return "No se encontró un vendedor con ese correo.";
+}
+
+public int buscarUsuarioPorCorreo(String correo) {
+    for (int i = 0; i < cantusuario; i++) {
+        if (usuarios[i].email.equals(correo)) {
+            return i;
+        }
+    }
+    return -1;
+}
+public String agregarMonto(String correo, int cantidad) {
+    int pos = buscarUsuarioPorCorreo(correo);
+
+    if (pos == -1) {
+        return "No se encontró el usuario.";
+    }
+
+    usuarios[pos].dinero += cantidad;
+
+    return "Monto agregado correctamente. Dinero actual: " + usuarios[pos].dinero;
+}
+public String descontarMonto(String correo, int cantidad) {
+    int pos = buscarUsuarioPorCorreo(correo);
+
+    if (pos == -1) {
+        return "No se encontró el usuario.";
+    }
+
+    usuarios[pos].dinero -= cantidad;
+
+    return "Monto descontado. Dinero actual: " + usuarios[pos].dinero;
+}
+
     /////
     
     

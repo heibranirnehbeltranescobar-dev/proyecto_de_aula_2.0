@@ -121,7 +121,7 @@ String email = tx_correo.getText();
     }
 
     if(email.equalsIgnoreCase("heibran@gmail.com") && contrasena.equals("123456")){
-        new bienvenido().setVisible(true);
+        new bienvenido(a).setVisible(true);
         this.dispose();
         
     }
