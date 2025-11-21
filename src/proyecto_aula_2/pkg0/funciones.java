@@ -29,7 +29,7 @@ public class funciones {
     public int cantproductousuario = 0;
     
     
-    public String gusuario(String nombre , String cedula, String email , String contrasena,String rol){
+    public String gusuario(String nombre , String email, String cedula , String contrasena,String rol){
         
         Usuario u = new Usuario(nombre,cedula,email,contrasena,rol,10000);
         
@@ -97,8 +97,53 @@ public class funciones {
     
     
     
+    public String listarUsuarios() {
+    String lista = "USUARIOS REGISTRADOS:\n\n";
+    
+    for (int i = 0; i < cantusuario; i++) {
+        Usuario u = usuarios[i];
+        lista +="Nombre: " + u.nombreCompleto 
+                + " | contraseña: " + u.cedula 
+                + " | Email: " + u.email 
+                + " | Rol: " + u.rol 
+                + "\n";
+    }
+    
+    return lista;
+}
     
     
+ public String suspenderUsuario(String email) {
+    for (int i = 0; i < cantusuario; i++) {
+        if (usuarios[i].email.equals(email)) {
+            usuarios[i].rol = "SUSPENDIDO"; 
+            return "Usuario suspendido";
+        }
+    }
+    return "Usuario no encontrado";
+}
+ 
+public int buscarUsuarioPorCedula(String correo) {
+    for (int i = 0; i < cantusuario; i++) {
+        if (usuarios[i].cedula.equals(correo)) {
+            return i;
+        }
+    }
+    return -1; // No encontrado
+}
+ 
+public String modificarUsuario(String correo, String nuevoNombre, String nuevaContrasena) {
+    int pos = buscarUsuarioPorCedula(correo);
+
+    if (pos == -1) {
+        return "Usuario no encontrado";
+    }
+
+    usuarios[pos].nombreCompleto = nuevoNombre;
+    usuarios[pos].password = nuevaContrasena;
+
+    return "Usuario modificado correctamente";
+}
     /////
     
     
