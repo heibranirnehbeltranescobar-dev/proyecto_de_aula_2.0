@@ -244,6 +244,7 @@ public class registro extends javax.swing.JFrame {
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
 
         new inicio_secion(a).setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jLabel11MouseClicked
 
     /**

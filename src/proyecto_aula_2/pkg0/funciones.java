@@ -29,7 +29,7 @@ public class funciones {
     public int cantproductousuario = 0;
     
     
-    public String gusuario(String nombre , String email, String cedula , String contrasena,String rol){
+    public String gusuario(String nombre ,  String cedula ,String email, String contrasena,String rol){
         
         Usuario u = new Usuario(nombre,email,contrasena,cedula,rol,10000);
         

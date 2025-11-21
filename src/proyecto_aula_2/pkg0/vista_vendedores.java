@@ -947,6 +947,49 @@ tx_edit_descripcion_producto.setText(a.productos[a.IDproducto3].descripcion);
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
      a.eliminarProducto(a.productos,a.IDproductoactual);
+     j_vista_nombre_producto1.setText("");
+            j_vista_precio_producto1.setText("");
+  
+            j_vista_nombre_producto2.setText("");
+            j_vista_precio_producto2.setText("");
+       
+            j_vista_nombre_producto3.setText("");
+            j_vista_precio_producto3.setText("");
+     int posicionventa1 = 0;
+        int posicionventa2 = 0;
+        int posicionventa3 = 0;
+        
+        int cont = 0 ;
+        for (int i = 0; i < a.cantusuario; i++) {
+            if (a.usuarios[i].cedula == a.cedulausuarioactual) {
+                cont++;
+            }
+            if (cont==1) {
+                posicionventa1 = i;
+            }
+            if (cont==2) {
+                posicionventa2 = i;
+            }
+            if (cont==3) {
+                posicionventa3 = i;
+            }
+            
+        }
+        if (cont == 1) {
+            j_vista_nombre_producto1.setText(a.productos[posicionventa1].nombre);
+            j_vista_precio_producto1.setText(""+a.productos[posicionventa1].precio);
+        }
+        if (cont == 2) {
+            j_vista_nombre_producto2.setText(a.productos[posicionventa2].nombre);
+            j_vista_precio_producto2.setText(""+a.productos[posicionventa2].precio);
+        }if (cont == 3) {
+            j_vista_nombre_producto3.setText(a.productos[posicionventa3].nombre);
+            j_vista_precio_producto3.setText(""+a.productos[posicionventa3].precio);
+        }
+        j_nombre_usuario.setText(a.usuarios[a.IDusuarioactual].nombreCompleto);
+        j_cedula_usuario.setText(a.usuarios[a.IDusuarioactual].cedula);
+        l_monto_usuario.setText(""+a.usuarios[a.IDusuarioactual].dinero);
+        pestañas_vendedor.setSelectedIndex(0); 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 

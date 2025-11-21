@@ -96,6 +96,7 @@ public class inicio extends javax.swing.JFrame {
     a.gproductoinicialsado("Altavoces", "Bocinas Bluetooth", 60, "55667788");
         
         new inicio_secion(a).setVisible(true);
+        this.dispose();
         
     
         
