@@ -93,6 +93,7 @@ public class vista_vendedores extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         error_edit = new javax.swing.JLabel();
         l_regrso2 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -367,6 +368,9 @@ public class vista_vendedores extends javax.swing.JFrame {
             }
         });
         editar_borrar_producto.add(l_regrso2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, 50));
+
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo_registro.png"))); // NOI18N
+        editar_borrar_producto.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 520, 320));
 
         pestañas_vendedor.addTab("tab5", editar_borrar_producto);
 
@@ -1008,6 +1012,7 @@ funciones funciones = new funciones();
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
