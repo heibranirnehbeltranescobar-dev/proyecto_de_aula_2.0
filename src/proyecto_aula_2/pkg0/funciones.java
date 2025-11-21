@@ -22,6 +22,12 @@ public class funciones {
     public Usuario[] usuarios = new Usuario [10];
     public objeto_venta productos []=new objeto_venta[10];
     public int IDusuarioactual = 0;
+    public int IDproducto1 = 0;
+    public int IDproducto2 = 0;
+    public int IDproducto3 = 0;
+    public int IDproductoactual = 0;
+    public int cantproductousuario = 0;
+    
     
     public String gusuario(String nombre , String cedula, String email , String contrasena,String rol){
         
@@ -57,6 +63,22 @@ public class funciones {
          String cara = "(=_=)";
         return cara;
      } 
+     public static void eliminarProducto(objeto_venta[] vector, int pos) {
+    // Validar posición
+    if (pos < 0 || pos >= vector.length) {
+        System.out.println("Posición inválida");
+        return;
+    }
+
+    // Mover los elementos hacia la izquierda desde la posición eliminada
+    for (int i = pos; i < vector.length - 1; i++) {
+        vector[i] = vector[i + 1];
+    }
+
+    // Colocar null al final, para indicar vacío
+    vector[vector.length - 1] = null;
+}
+
      
       public boolean validarcorreo(String email) {
         return email.contains("@") && email.contains(".");

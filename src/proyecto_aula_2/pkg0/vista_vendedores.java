@@ -37,12 +37,8 @@ public class vista_vendedores extends javax.swing.JFrame {
         j_vista_precio_producto1 = new javax.swing.JLabel();
         j_vista_nombre_producto2 = new javax.swing.JLabel();
         j_vista_nombre_producto3 = new javax.swing.JLabel();
-        j_vista_nombre_producto4 = new javax.swing.JLabel();
-        j_vista_nombre_producto5 = new javax.swing.JLabel();
         j_vista_precio_producto2 = new javax.swing.JLabel();
         j_vista_precio_producto3 = new javax.swing.JLabel();
-        j_vista_precio_producto4 = new javax.swing.JLabel();
-        j_vista_precio_producto5 = new javax.swing.JLabel();
         b_usuario = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         j_nombre_usuario = new javax.swing.JLabel();
@@ -65,6 +61,7 @@ public class vista_vendedores extends javax.swing.JFrame {
         error_precio = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         error_bacio = new javax.swing.JLabel();
+        l_regrso1 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         editar_datos_vendedor = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
@@ -79,8 +76,23 @@ public class vista_vendedores extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         l_regrso = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        editar_borrar_producto = new javax.swing.JPanel();
+        jLabel23 = new javax.swing.JLabel();
+        tx_edit_nombre_producto = new javax.swing.JTextField();
+        jLabel24 = new javax.swing.JLabel();
+        tx_edit_descripcion_producto = new javax.swing.JTextField();
+        jLabel25 = new javax.swing.JLabel();
+        l_precio = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        l_ventas_productos = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        error_edit = new javax.swing.JLabel();
+        l_regrso2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -99,34 +111,52 @@ public class vista_vendedores extends javax.swing.JFrame {
         inicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         j_vista_nombre_producto1.setText("1");
-        inicio.add(j_vista_nombre_producto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 220, 50));
+        j_vista_nombre_producto1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                j_vista_nombre_producto1MouseClicked(evt);
+            }
+        });
+        inicio.add(j_vista_nombre_producto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 220, 50));
 
         j_vista_precio_producto1.setText("1");
-        inicio.add(j_vista_precio_producto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, 100, 50));
+        j_vista_precio_producto1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                j_vista_precio_producto1MouseClicked(evt);
+            }
+        });
+        inicio.add(j_vista_precio_producto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, 100, 50));
 
         j_vista_nombre_producto2.setText("2");
-        inicio.add(j_vista_nombre_producto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 220, 50));
+        j_vista_nombre_producto2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                j_vista_nombre_producto2MouseClicked(evt);
+            }
+        });
+        inicio.add(j_vista_nombre_producto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 220, 50));
 
         j_vista_nombre_producto3.setText("3");
-        inicio.add(j_vista_nombre_producto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 220, 50));
-
-        j_vista_nombre_producto4.setText("4");
-        inicio.add(j_vista_nombre_producto4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 220, 50));
-
-        j_vista_nombre_producto5.setText("5");
-        inicio.add(j_vista_nombre_producto5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 220, 50));
+        j_vista_nombre_producto3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                j_vista_nombre_producto3MouseClicked(evt);
+            }
+        });
+        inicio.add(j_vista_nombre_producto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 220, 50));
 
         j_vista_precio_producto2.setText("2");
-        inicio.add(j_vista_precio_producto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 80, 100, 50));
+        j_vista_precio_producto2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                j_vista_precio_producto2MouseClicked(evt);
+            }
+        });
+        inicio.add(j_vista_precio_producto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 120, 100, 50));
 
         j_vista_precio_producto3.setText("3");
-        inicio.add(j_vista_precio_producto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 100, 50));
-
-        j_vista_precio_producto4.setText("4");
-        inicio.add(j_vista_precio_producto4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 100, 50));
-
-        j_vista_precio_producto5.setText("5");
-        inicio.add(j_vista_precio_producto5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 100, 50));
+        j_vista_precio_producto3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                j_vista_precio_producto3MouseClicked(evt);
+            }
+        });
+        inicio.add(j_vista_precio_producto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 100, 50));
 
         b_usuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/usuario.png"))); // NOI18N
         b_usuario.addActionListener(new java.awt.event.ActionListener() {
@@ -218,6 +248,14 @@ public class vista_vendedores extends javax.swing.JFrame {
         registro_p.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 237, -1, -1));
         registro_p.add(error_bacio, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, 180, 30));
 
+        l_regrso1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/atras.png"))); // NOI18N
+        l_regrso1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                l_regrso1MouseClicked(evt);
+            }
+        });
+        registro_p.add(l_regrso1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 70, 50));
+
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo_nuevo_objeto.jpg"))); // NOI18N
         registro_p.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(-220, 0, 740, 320));
 
@@ -263,6 +301,14 @@ public class vista_vendedores extends javax.swing.JFrame {
         });
         editar_datos_vendedor.add(l_regrso, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 100, 50));
 
+        jButton8.setText("Cerrar secion");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        editar_datos_vendedor.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, -1, -1));
+
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono_editar.png"))); // NOI18N
         editar_datos_vendedor.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 310));
 
@@ -270,6 +316,59 @@ public class vista_vendedores extends javax.swing.JFrame {
         editar_datos_vendedor.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 520, 340));
 
         pestañas_vendedor.addTab("tab4", editar_datos_vendedor);
+
+        editar_borrar_producto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel23.setText("Nombre del producto");
+        editar_borrar_producto.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, -1, -1));
+        editar_borrar_producto.add(tx_edit_nombre_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 190, -1));
+
+        jLabel24.setText("Descripcio");
+        editar_borrar_producto.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
+        editar_borrar_producto.add(tx_edit_descripcion_producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 190, 30));
+
+        jLabel25.setText("Precio");
+        editar_borrar_producto.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 50, 20));
+        editar_borrar_producto.add(l_precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 90, 20));
+
+        jLabel26.setText("ventas del producto");
+        editar_borrar_producto.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, -1, -1));
+        editar_borrar_producto.add(l_ventas_productos, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 110, 20));
+
+        jButton5.setText("Terminar Editar");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        editar_borrar_producto.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, -1, -1));
+
+        jButton6.setText("Continuar sin editar");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        editar_borrar_producto.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 230, -1, -1));
+
+        jButton7.setText("Eliminar producto");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        editar_borrar_producto.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, -1, -1));
+        editar_borrar_producto.add(error_edit, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 450, 30));
+
+        l_regrso2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/atras.png"))); // NOI18N
+        l_regrso2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                l_regrso2MouseClicked(evt);
+            }
+        });
+        editar_borrar_producto.add(l_regrso2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, 50));
+
+        pestañas_vendedor.addTab("tab5", editar_borrar_producto);
 
         jPanel1.add(pestañas_vendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 520, 360));
 
@@ -360,12 +459,15 @@ public class vista_vendedores extends javax.swing.JFrame {
             }
             if (cont==1) {
                 posicionventa1 = i;
+                a.IDproducto1 = i;
             }
             if (cont==2) {
                 posicionventa2 = i;
+                a.IDproducto2 = i;
             }
             if (cont==3) {
                 posicionventa3 = i;
+                a.IDproducto3 = i;
             }
         }
         if (cont == 1) {
@@ -396,12 +498,15 @@ public class vista_vendedores extends javax.swing.JFrame {
             }
             if (cont==1) {
                 posicionventa1 = i;
+                a.IDproducto1 = i;
             }
             if (cont==2) {
                 posicionventa2 = i;
+                a.IDproducto2 = i;
             }
             if (cont==3) {
                 posicionventa3 = i;
+                a.IDproducto3 = i;
             }
            
         }
@@ -465,12 +570,15 @@ public class vista_vendedores extends javax.swing.JFrame {
             }
             if (cont==1) {
                 posicionventa1 = i;
+                a.IDproducto1 = i;
             }
             if (cont==2) {
                 posicionventa2 = i;
+                a.IDproducto2 = i;
             }
             if (cont==3) {
                 posicionventa3 = i;
+                a.IDproducto3 = i;
             }
             
         }
@@ -488,7 +596,14 @@ public class vista_vendedores extends javax.swing.JFrame {
         j_nombre_usuario.setText(a.usuarios[a.IDusuarioactual].nombreCompleto);
         j_cedula_usuario.setText(a.usuarios[a.IDusuarioactual].cedula);
         l_monto_usuario.setText(""+a.usuarios[a.IDusuarioactual].dinero);
-        pestañas_vendedor.setSelectedIndex(0);
+        
+            if (cont < 3 && a.canObjetos < 30) {
+                a.Guardarproducto(nproducto, dproducto, pproducto);
+                
+                
+            }if (cont==3 || a.canObjetos < 30) {
+                error_bacio.setText("Ya no puede registrar otro producto elimine un producto");
+            }pestañas_vendedor.setSelectedIndex(0);
    
     }else{error_bacio.setText("No se aceptan datos bacios");}
         
@@ -551,8 +666,285 @@ public class vista_vendedores extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void l_regrsoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_l_regrsoMouseClicked
+ int posicionventa1 = 0;
+        int posicionventa2 = 0;
+        int posicionventa3 = 0;
         
+        int cont = 0 ;
+        for (int i = 0; i < a.cantusuario; i++) {
+            if (a.usuarios[i].cedula == a.cedulausuarioactual) {
+                cont++;
+            }
+            if (cont==1) {
+                posicionventa1 = i;
+                a.IDproducto1 = i;
+            }
+            if (cont==2) {
+                posicionventa2 = i;
+                a.IDproducto2 = i;
+            }
+            if (cont==3) {
+                posicionventa3 = i;
+                a.IDproducto3 = i;
+            }
+            
+        }
+        if (cont == 1) {
+            j_vista_nombre_producto1.setText(a.productos[posicionventa1].nombre);
+            j_vista_precio_producto1.setText(""+a.productos[posicionventa1].precio);
+        }
+        if (cont == 2) {
+            j_vista_nombre_producto2.setText(a.productos[posicionventa2].nombre);
+            j_vista_precio_producto2.setText(""+a.productos[posicionventa2].precio);
+        }if (cont == 3) {
+            j_vista_nombre_producto3.setText(a.productos[posicionventa3].nombre);
+            j_vista_precio_producto3.setText(""+a.productos[posicionventa3].precio);
+        }
+        j_nombre_usuario.setText(a.usuarios[a.IDusuarioactual].nombreCompleto);
+        j_cedula_usuario.setText(a.usuarios[a.IDusuarioactual].cedula);
+        l_monto_usuario.setText(""+a.usuarios[a.IDusuarioactual].dinero);
+           
+        pestañas_vendedor.setSelectedIndex(0);   
     }//GEN-LAST:event_l_regrsoMouseClicked
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        String editnombreproducto = tx_edit_nombre_producto.getText();
+        String editdesproducto = tx_edit_descripcion_producto.getText();
+        
+            
+        
+        if (!editdesproducto.isEmpty() && !editnombreproducto.isEmpty()) {
+            a.productos[a.IDproductoactual].nombre=editnombreproducto;
+             a.productos[a.IDproductoactual].descripcion=editdesproducto;
+              int posicionventa1 = 0;
+        int posicionventa2 = 0;
+        int posicionventa3 = 0;
+        
+        int cont = 0 ;
+        for (int i = 0; i < a.cantusuario; i++) {
+            if (a.usuarios[i].cedula == a.cedulausuarioactual) {
+                cont++;
+            }
+            if (cont==1) {
+                posicionventa1 = i;
+                a.IDproducto1 = i;
+            }
+            if (cont==2) {
+                posicionventa2 = i;
+                a.IDproducto3 = i;
+            }
+            if (cont==3) {
+                posicionventa3 = i;
+                a.IDproducto3 = i;
+            }
+            
+        }
+        if (cont == 1) {
+            j_vista_nombre_producto1.setText(a.productos[posicionventa1].nombre);
+            j_vista_precio_producto1.setText(""+a.productos[posicionventa1].precio);
+        }
+        if (cont == 2) {
+            j_vista_nombre_producto2.setText(a.productos[posicionventa2].nombre);
+            j_vista_precio_producto2.setText(""+a.productos[posicionventa2].precio);
+        }if (cont == 3) {
+            j_vista_nombre_producto3.setText(a.productos[posicionventa3].nombre);
+            j_vista_precio_producto3.setText(""+a.productos[posicionventa3].precio);
+        }
+        j_nombre_usuario.setText(a.usuarios[a.IDusuarioactual].nombreCompleto);
+        j_cedula_usuario.setText(a.usuarios[a.IDusuarioactual].cedula);
+        l_monto_usuario.setText(""+a.usuarios[a.IDusuarioactual].dinero);
+         
+             pestañas_vendedor.setSelectedIndex(0);
+            
+            
+            
+        }if (editdesproducto.isEmpty() && editnombreproducto.isEmpty()) {
+            error_edit.setText("Lo que desean editar no puede estar vacio");  
+        }
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void j_vista_nombre_producto1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_j_vista_nombre_producto1MouseClicked
+       tx_edit_descripcion_producto.setText(a.productos[a.IDproducto1].descripcion);
+       tx_edit_nombre_producto.setText(a.productos[a.IDproducto1].nombre);
+       l_precio.setText(""+a.productos[a.IDproducto1].precio);
+       l_ventas_productos.setText(""+a.productos[a.IDproducto1].ventas);
+       a.IDproductoactual=a.IDproducto1;
+       pestañas_vendedor.setSelectedIndex(4);
+    }//GEN-LAST:event_j_vista_nombre_producto1MouseClicked
+
+    private void j_vista_precio_producto1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_j_vista_precio_producto1MouseClicked
+     tx_edit_descripcion_producto.setText(a.productos[a.IDproducto1].descripcion);
+       tx_edit_nombre_producto.setText(a.productos[a.IDproducto1].nombre);
+       l_precio.setText(""+a.productos[a.IDproducto1].precio);
+       l_ventas_productos.setText(""+a.productos[a.IDproducto1].ventas); 
+       a.IDproductoactual=a.IDproducto1;
+       pestañas_vendedor.setSelectedIndex(4);       // TODO add your handling code here:
+    }//GEN-LAST:event_j_vista_precio_producto1MouseClicked
+
+    private void j_vista_nombre_producto2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_j_vista_nombre_producto2MouseClicked
+       tx_edit_descripcion_producto.setText(a.productos[a.IDproducto2].descripcion);
+       tx_edit_nombre_producto.setText(a.productos[a.IDproducto2].nombre);
+       l_precio.setText(""+a.productos[a.IDproducto2].precio);
+       l_ventas_productos.setText(""+a.productos[a.IDproducto2].ventas);  
+       a.IDproductoactual=a.IDproducto2;
+       pestañas_vendedor.setSelectedIndex(4);// TODO add your handling code here:
+    }//GEN-LAST:event_j_vista_nombre_producto2MouseClicked
+
+    private void j_vista_precio_producto2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_j_vista_precio_producto2MouseClicked
+tx_edit_descripcion_producto.setText(a.productos[a.IDproducto2].descripcion);
+       tx_edit_nombre_producto.setText(a.productos[a.IDproducto2].nombre);
+       l_precio.setText(""+a.productos[a.IDproducto2].precio);
+       l_ventas_productos.setText(""+a.productos[a.IDproducto2].ventas); 
+       a.IDproductoactual=a.IDproducto2;
+       pestañas_vendedor.setSelectedIndex(4);// TODO add your handling code here:
+    }//GEN-LAST:event_j_vista_precio_producto2MouseClicked
+
+    private void j_vista_nombre_producto3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_j_vista_nombre_producto3MouseClicked
+tx_edit_descripcion_producto.setText(a.productos[a.IDproducto3].descripcion);
+       tx_edit_nombre_producto.setText(a.productos[a.IDproducto3].nombre);
+       l_precio.setText(""+a.productos[a.IDproducto3].precio);
+       l_ventas_productos.setText(""+a.productos[a.IDproducto3].ventas); 
+       a.IDproductoactual=a.IDproducto3;
+       pestañas_vendedor.setSelectedIndex(4);       // TODO add your handling code here:
+    }//GEN-LAST:event_j_vista_nombre_producto3MouseClicked
+
+    private void j_vista_precio_producto3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_j_vista_precio_producto3MouseClicked
+tx_edit_descripcion_producto.setText(a.productos[a.IDproducto3].descripcion);
+       tx_edit_nombre_producto.setText(a.productos[a.IDproducto3].nombre);
+       l_precio.setText(""+a.productos[a.IDproducto3].precio);
+       l_ventas_productos.setText(""+a.productos[a.IDproducto3].ventas); 
+       a.IDproductoactual=a.IDproducto3;
+       pestañas_vendedor.setSelectedIndex(4);// TODO add your handling code here:
+    }//GEN-LAST:event_j_vista_precio_producto3MouseClicked
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    new inicio_secion(a).setVisible(true);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void l_regrso1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_l_regrso1MouseClicked
+        int posicionventa1 = 0;
+        int posicionventa2 = 0;
+        int posicionventa3 = 0;
+        
+        int cont = 0 ;
+        for (int i = 0; i < a.cantusuario; i++) {
+            if (a.usuarios[i].cedula == a.cedulausuarioactual) {
+                cont++;
+            }
+            if (cont==1) {
+                posicionventa1 = i;
+            }
+            if (cont==2) {
+                posicionventa2 = i;
+            }
+            if (cont==3) {
+                posicionventa3 = i;
+            }
+            
+        }
+        if (cont == 1) {
+            j_vista_nombre_producto1.setText(a.productos[posicionventa1].nombre);
+            j_vista_precio_producto1.setText(""+a.productos[posicionventa1].precio);
+        }
+        if (cont == 2) {
+            j_vista_nombre_producto2.setText(a.productos[posicionventa2].nombre);
+            j_vista_precio_producto2.setText(""+a.productos[posicionventa2].precio);
+        }if (cont == 3) {
+            j_vista_nombre_producto3.setText(a.productos[posicionventa3].nombre);
+            j_vista_precio_producto3.setText(""+a.productos[posicionventa3].precio);
+        }
+        j_nombre_usuario.setText(a.usuarios[a.IDusuarioactual].nombreCompleto);
+        j_cedula_usuario.setText(a.usuarios[a.IDusuarioactual].cedula);
+        l_monto_usuario.setText(""+a.usuarios[a.IDusuarioactual].dinero);
+         pestañas_vendedor.setSelectedIndex(0);   
+     // TODO add your handling code here:
+    }//GEN-LAST:event_l_regrso1MouseClicked
+
+    private void l_regrso2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_l_regrso2MouseClicked
+      int posicionventa1 = 0;
+        int posicionventa2 = 0;
+        int posicionventa3 = 0;
+        
+        int cont = 0 ;
+        for (int i = 0; i < a.cantusuario; i++) {
+            if (a.usuarios[i].cedula == a.cedulausuarioactual) {
+                cont++;
+            }
+            if (cont==1) {
+                posicionventa1 = i;
+            }
+            if (cont==2) {
+                posicionventa2 = i;
+            }
+            if (cont==3) {
+                posicionventa3 = i;
+            }
+            
+        }
+        if (cont == 1) {
+            j_vista_nombre_producto1.setText(a.productos[posicionventa1].nombre);
+            j_vista_precio_producto1.setText(""+a.productos[posicionventa1].precio);
+        }
+        if (cont == 2) {
+            j_vista_nombre_producto2.setText(a.productos[posicionventa2].nombre);
+            j_vista_precio_producto2.setText(""+a.productos[posicionventa2].precio);
+        }if (cont == 3) {
+            j_vista_nombre_producto3.setText(a.productos[posicionventa3].nombre);
+            j_vista_precio_producto3.setText(""+a.productos[posicionventa3].precio);
+        }
+        j_nombre_usuario.setText(a.usuarios[a.IDusuarioactual].nombreCompleto);
+        j_cedula_usuario.setText(a.usuarios[a.IDusuarioactual].cedula);
+        l_monto_usuario.setText(""+a.usuarios[a.IDusuarioactual].dinero);
+        pestañas_vendedor.setSelectedIndex(0);        // TODO add your handling code here:
+    }//GEN-LAST:event_l_regrso2MouseClicked
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+  int posicionventa1 = 0;
+        int posicionventa2 = 0;
+        int posicionventa3 = 0;
+        
+        int cont = 0 ;
+        for (int i = 0; i < a.cantusuario; i++) {
+            if (a.usuarios[i].cedula == a.cedulausuarioactual) {
+                cont++;
+            }
+            if (cont==1) {
+                posicionventa1 = i;
+            }
+            if (cont==2) {
+                posicionventa2 = i;
+            }
+            if (cont==3) {
+                posicionventa3 = i;
+            }
+            
+        }
+        if (cont == 1) {
+            j_vista_nombre_producto1.setText(a.productos[posicionventa1].nombre);
+            j_vista_precio_producto1.setText(""+a.productos[posicionventa1].precio);
+        }
+        if (cont == 2) {
+            j_vista_nombre_producto2.setText(a.productos[posicionventa2].nombre);
+            j_vista_precio_producto2.setText(""+a.productos[posicionventa2].precio);
+        }if (cont == 3) {
+            j_vista_nombre_producto3.setText(a.productos[posicionventa3].nombre);
+            j_vista_precio_producto3.setText(""+a.productos[posicionventa3].precio);
+        }
+        j_nombre_usuario.setText(a.usuarios[a.IDusuarioactual].nombreCompleto);
+        j_cedula_usuario.setText(a.usuarios[a.IDusuarioactual].cedula);
+        l_monto_usuario.setText(""+a.usuarios[a.IDusuarioactual].dinero);
+        pestañas_vendedor.setSelectedIndex(0);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+     a.eliminarProducto(a.productos,a.IDproductoactual);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -582,8 +974,10 @@ funciones funciones = new funciones();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton b_usuario;
     private javax.swing.JPanel bienvenido;
+    private javax.swing.JPanel editar_borrar_producto;
     private javax.swing.JPanel editar_datos_vendedor;
     private javax.swing.JLabel error_bacio;
+    private javax.swing.JLabel error_edit;
     private javax.swing.JLabel error_edit_email;
     private javax.swing.JLabel error_precio;
     private javax.swing.JPanel inicio;
@@ -591,6 +985,10 @@ funciones funciones = new funciones();
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -606,6 +1004,10 @@ funciones funciones = new funciones();
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -621,21 +1023,23 @@ funciones funciones = new funciones();
     private javax.swing.JLabel j_vista_nombre_producto1;
     private javax.swing.JLabel j_vista_nombre_producto2;
     private javax.swing.JLabel j_vista_nombre_producto3;
-    private javax.swing.JLabel j_vista_nombre_producto4;
-    private javax.swing.JLabel j_vista_nombre_producto5;
     private javax.swing.JLabel j_vista_precio_producto1;
     private javax.swing.JLabel j_vista_precio_producto2;
     private javax.swing.JLabel j_vista_precio_producto3;
-    private javax.swing.JLabel j_vista_precio_producto4;
-    private javax.swing.JLabel j_vista_precio_producto5;
     private javax.swing.JLabel l_monto_usuario;
+    private javax.swing.JLabel l_precio;
     private javax.swing.JLabel l_regrso;
+    private javax.swing.JLabel l_regrso1;
+    private javax.swing.JLabel l_regrso2;
+    private javax.swing.JLabel l_ventas_productos;
     private javax.swing.JTabbedPane pestañas_vendedor;
     private javax.swing.JPanel registro_p;
     private javax.swing.JTextField tx_descripcion_producto;
     private javax.swing.JTextField tx_edit_contraseña;
+    private javax.swing.JTextField tx_edit_descripcion_producto;
     private javax.swing.JTextField tx_edit_email;
     private javax.swing.JTextField tx_edit_nombre;
+    private javax.swing.JTextField tx_edit_nombre_producto;
     private javax.swing.JTextField tx_nombre_producto;
     private javax.swing.JTextField tx_precio_producto;
     // End of variables declaration//GEN-END:variables
