@@ -184,6 +184,12 @@ public class registro extends javax.swing.JFrame {
         }
       if(Remail.contains("@") && Remail.contains(".")){
             Cemail=true;
+            for (int i = 0; i < a.cantusuario; i++) {
+                if (Remail.equalsIgnoreCase(a.usuarios[i].email)) {
+                    Cemail=false;
+                }
+              
+          }
       }
       
       if( Cemail==false ){
@@ -199,13 +205,13 @@ public class registro extends javax.swing.JFrame {
      boolean unica = true;
       if(a.validarCedula(Rcedula)==false){
          error_cedula.setText("dijite una cedula valida");
-          for (int e = 0; e < a.cantusuario; e++) {
+         
+              
+          } for (int e = 0; e < a.cantusuario; e++) {
               if (Rcedula == a.usuarios[e].cedula) {
                   unica = false;
                   
               }
-              
-          }
       }
        if ( Cemail == true && verificarvacio == true && a.validarCedula(Rcedula) == true && Ctipo == true && unica == true){
            

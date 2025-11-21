@@ -11,11 +11,12 @@ package proyecto_aula_2.pkg0;
 public class inicio extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(inicio.class.getName());
-
+    private funciones a;
     /**
      * Creates new form inicio
      */
-    public inicio() {
+    public inicio(funciones funcion) {
+        this.a = funcion;
         initComponents();
     }
 
@@ -28,21 +29,80 @@ public class inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setText("continuar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 160, 50));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel1.setText("Benvenidos a marketnatlan");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 440, 90));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo_tipo.jpg"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, 90, 80));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/main-background.jpg"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 380));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       
+        
+        a.gusuario("hibe", "12345678", "hibe@gmail.com", "012345678", "1"); // usuario
+        a.gusuario("ana", "87654321", "ana@gmail.com", "543210678", "1");   // usuario
+        a.gusuario("juan", "11223344", "juan@gmail.com", "98765487", "2"); // vendedor
+        a.gusuario("maria", "44332211", "maria@gmail.com", "65432190", "2");// vendedor
+        a.gusuario("pedro", "99887766", "pedro@gmail.com", "11122270", "1"); // usuario
+        a.gusuario("luis", "55667788", "luis@gmail.com", "33344455", "2"); //vendedor
+         // Productos de Juan (11223344)
+    a.gproductoinicialsado("Laptop", "Laptop gamer 16GB", 1200, "11223344");
+    a.gproductoinicialsado("Monitor", "Monitor 24 pulgadas", 220, "11223344");
+    a.gproductoinicialsado("Auriculares", "Auriculares pro", 80, "11223344");
+
+    // Productos de Maria (44332211)
+    a.gproductoinicialsado("Teclado", "Teclado mecánico RGB", 70, "44332211");
+    a.gproductoinicialsado("Mouse", "Mouse inalámbrico", 30, "44332211");
+    a.gproductoinicialsado("SSD", "Disco SSD 1TB", 150, "44332211");
+
+    // Productos de Luis (55667788)
+    a.gproductoinicialsado("Tablet", "Tablet 10 pulgadas", 300, "55667788");
+    a.gproductoinicialsado("Impresora", "Impresora multifuncional", 120, "55667788");
+    a.gproductoinicialsado("Altavoces", "Bocinas Bluetooth", 60, "55667788");
+        
+        new inicio_secion(a).setVisible(true);
+        
+    
+        
+        
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -64,11 +124,16 @@ public class inicio extends javax.swing.JFrame {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+    funciones f1 = new funciones();
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new inicio().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new inicio(f1).setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

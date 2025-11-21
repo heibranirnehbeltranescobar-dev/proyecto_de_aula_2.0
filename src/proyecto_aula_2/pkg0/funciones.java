@@ -32,16 +32,22 @@ public class funciones {
     
     public String gusuario(String nombre , String email, String cedula , String contrasena,String rol){
         
-        Usuario u = new Usuario(nombre,cedula,email,contrasena,rol,10000);
+        Usuario u = new Usuario(nombre,email,contrasena,cedula,rol,10000);
         
         usuarios [cantusuario] = u;
         cantusuario++;
         
-        String cara = "(=_=)";
+        String cara = "(=_=)))";
         return cara;
     
     }
-    
+    public String gproductoinicialsado (String nombre,String descripcion,int precio,String cedulausu){
+    objeto_venta producto = new objeto_venta(nombre,descripcion,precio,cedulausu,0);
+         productos [canproducto] = producto;
+         canproducto++;
+         String cara = "(=_=)";
+         return cara;
+    }
      
      
      public String Guardarproducto(String nombre , String descripcion ,int precio){
